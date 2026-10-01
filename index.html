@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portfolio de SEYE Ndeye Seynabou – Étudiante en BUT Informatique à l'IUT d'Aix-Marseille. Future ingénieure en informatique passionnée par le développement logiciel et le web." />
+  <meta name="author" content="SEYE Ndeye Seynabou" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>Seynabou SEYE | Portfolio – BUT Informatique</title>
+
+  <!-- Google Fonts : Inter & Fira Code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Custom CSS (Thème clair, épuré et moderne) -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="100">
+
+  <!-- Curseur interactif qui suit les mouvements de la souris -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ======================================
+       NAVBAR ÉPURÉE
+  ====================================== -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <!-- Logo / Nom -->
+      <a class="navbar-brand" href="#hero">
+        <span class="brand-bracket">&lt;</span>Seynabou SEYE<span class="brand-bracket">/&gt;</span>
+      </a>
+
+      <!-- Hamburger mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span class="toggler-icon"></span>
+        <span class="toggler-icon"></span>
+        <span class="toggler-icon"></span>
+      </button>
+
+      <!-- Menu de navigation -->
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link active" href="#hero">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projets</a></li>
+          <li class="nav-item"><a class="nav-link" href="#timeline">Parcours</a></li>
+          <li class="nav-item d-flex align-items-center">
+            <button class="btn-theme-toggle" id="themeToggle" title="Changer le thème" aria-label="Basculer le thème">
+              <i class="bi bi-moon-fill" id="themeIcon"></i>
+            </button>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-nav-contact" href="#contact">
+              <i class="bi bi-chat-dots-fill me-1"></i> Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ======================================
+       SECTION HERO (ACCUEIL LUMINEUX)
+  ====================================== -->
+  <section id="hero" class="hero-section d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <!-- Texte Hero -->
+        <div class="col-lg-6 hero-text reveal-item">
+          <!-- Badge de disponibilité -->
+          <div class="hero-badge-status">
+            <span class="status-dot"></span>
+            <span>À la recherche d'un stage · BUT Informatique</span>
+          </div>
+
+          <p class="hero-greeting">
+            <i class="bi bi-code-slash me-1"></i> Bonjour, je suis
+          </p>
+
+          <h1 class="hero-name">
+            Ndeye Seynabou <span class="gradient-text">SEYE</span>
+          </h1>
+
+          <h2 class="hero-tagline">
+            <span>Future ingénieure logicielle</span><br class="d-none d-sm-block" />
+            <span class="typing-wrapper">
+              <span id="typing-text" class="typing-text"></span><span class="typing-cursor">|</span>
+            </span>
+          </h2>
+
+          <p class="hero-desc">
+            Étudiante en deuxiéme année de <strong>BUT Informatique</strong> à l'IUT d'Aix-Marseille.
+            Passionnée par l'algorithmique, la conception logicielle et le développement d'applications fiables et modernes.
+          </p>
+
+          <!-- Boutons d'action -->
+          <div class="hero-actions mt-4">
+            <a href="#projects" class="btn btn-primary-custom">
+              Explorer mes projets <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+            <a href="cv%20Stage-SEYE_Ndeye_Seynabou.pdf" target="_blank" download="CV_Seynabou_SEYE.pdf"
+              class="btn btn-cv-custom" title="Télécharger le CV de Seynabou SEYE en PDF">
+              <i class="bi bi-file-earmark-arrow-down-fill me-2"></i> Mon CV
+            </a>
+            <a href="#contact" class="btn btn-outline-custom">
+              Me contacter
+            </a>
+          </div>
+
+          <!-- Liens réseaux sociaux Hero -->
+          <div class="hero-socials mt-4">
+            <a href="https://github.com/repos" target="_blank" rel="noopener noreferrer" class="social-icon"
+              title="Profil GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="mailto:seyendeyeseynabou4@gmail.com" class="social-icon" title="Envoyer un email">
+              <i class="bi bi-envelope-fill"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon"
+              title="Profil LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Illustration Hero -->
+        <div class="col-lg-6 hero-img-container reveal-item reveal-delay-2">
+          <div class="hero-img-wrapper">
+            <img src="assets/hero_feminine_blue.jpg" alt="Illustration développeuse" class="hero-illustration" />
+
+            <!-- Badges discrets -->
+            <div class="float-badge float-badge--code">
+              <i class="bi bi-braces-asterisk text-primary"></i>
+              <span>C++ &amp; Web Moderne</span>
+            </div>
+
+            <div class="float-badge float-badge--student">
+              <i class="bi bi-mortarboard-fill text-primary"></i>
+              <span>IUT Aix-Marseille · Arles</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Indicateur de défilement -->
+      <a href="#about" class="scroll-indicator" aria-label="Faire défiler vers le bas">
+        <div class="scroll-mouse"></div>
+        <span>Défiler</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ======================================
+       SECTION À PROPOS (FOND BLANC)
+  ====================================== -->
+  <section id="about" class="section-padding section-white">
+    <div class="container">
+      <div class="section-header text-center reveal-item">
+        <span class="section-tag"><i class="bi bi-person-fill"></i> Présentation</span>
+        <h2 class="section-title">À <span class="gradient-text">propos</span> de moi</h2>
+        <p class="section-subtitle">
+          Découvrez mon parcours, ma vision de la technologie et ce qui m'anime au quotidien.
+        </p>
+      </div>
+
+      <div class="row align-items-center gy-5">
+        <!-- Photo de profil -->
+        <div class="col-lg-4 d-flex justify-content-center reveal-item reveal-delay-1">
+          <div class="about-avatar-wrapper">
+            <div class="avatar-ring">
+              <div class="avatar-placeholder">
+                <img src="assets/hero-photo.jpg" alt="Photo de Seynabou SEYE" class="avatar-photo" />
+              </div>
+            </div>
+            <div class="about-badge">
+              <i class="bi bi-award-fill text-primary"></i> BUT Informatique · 1ère année
+            </div>
+          </div>
+        </div>
+
+        <!-- Bio et statistiques -->
+        <div class="col-lg-8 reveal-item reveal-delay-2">
+          <div class="about-card clean-card">
+            <p class="about-text">
+              Étudiante en <strong>BUT Informatique</strong> à l'<strong>IUT d'Aix-Marseille (site d'Arles)</strong>,
+              je me consacre à la conception logicielle, à l'algorithmique et au développement d'applications performantes.
+            </p>
+            <p class="about-text">
+              Mon parcours académique, débuté par une licence d'informatique au Sénégal puis poursuivi en France, m'a
+              apporté <strong>une solide culture scientifique, une méthodologie rigoureuse</strong> et une réelle curiosité
+              pour les défis techniques.
+            </p>
+            <p class="about-text">
+              J'aime concevoir des architectures claires et maintenables, que ce soit en programmation système et orientée
+              objet avec <strong>C++</strong> ou dans la création de solutions web avec <strong>HTML/CSS</strong> et <strong>Python</strong>.
+            </p>
+
+            <!-- Highlights clés -->
+            <div class="about-highlights">
+              <div class="highlight-pill">
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Programmation Orientée Objet (POO)</span>
+              </div>
+              <div class="highlight-pill">
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Algorithmique &amp; Complexité</span>
+              </div>
+              <div class="highlight-pill">
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Bases de données &amp; PostgreSQL</span>
+              </div>
+              <div class="highlight-pill">
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Travail d'équipe &amp; Gestion de projet</span>
+              </div>
+            </div>
+
+            <!-- Chiffres clés animés -->
+            <div class="row g-3 about-stats">
+              <div class="col-6 col-md-3">
+                <div class="stat-box">
+                  <div class="stat-number-wrap">
+                    <span class="stat-number count-up" data-target="4">0</span>
+                    <span class="stat-suffix">+</span>
+                  </div>
+                  <span class="stat-label">Projets réalisés</span>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="stat-box">
+                  <div class="stat-number-wrap">
+                    <span class="stat-number count-up" data-target="7">0</span>
+                  </div>
+                  <span class="stat-label">Technologies</span>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="stat-box">
+                  <div class="stat-number-wrap">
+                    <span class="stat-number count-up" data-target="2">0</span>
+                    <span class="stat-suffix">ème</span>
+                  </div>
+                  <span class="stat-label">Année BUT Info</span>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="stat-box">
+                  <div class="stat-number-wrap">
+                    <span class="stat-number count-up" data-target="100">0</span>
+                    <span class="stat-suffix">%</span>
+                  </div>
+                  <span class="stat-label">Motivation</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bouton CV dans À Propos -->
+            <div class="mt-4 pt-2 d-flex flex-wrap gap-3">
+              <a href="cv%20Stage-SEYE_Ndeye_Seynabou.pdf" target="_blank" download="cv Stage-SEYE_Ndeye_Seynabou.pdf"
+                class="btn btn-primary-custom" title="Télécharger mon CV">
+                <i class="bi bi-file-earmark-arrow-down-fill me-2"></i> Télécharger mon CV complet
+              </a>
+              <a href="#contact" class="btn btn-outline-custom">
+                <i class="bi bi-envelope-fill me-2"></i> Me proposer une opportunité
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================
+       SECTION COMPÉTENCES (FOND GRIS DOUX)
+  ====================================== -->
+  <section id="skills" class="section-padding section-subtle">
+    <div class="container">
+      <div class="section-header text-center reveal-item">
+        <span class="section-tag"><i class="bi bi-gear-wide-connected"></i> Boîte à outils</span>
+        <h2 class="section-title">Mes <span class="gradient-text">Compétences</span></h2>
+        <p class="section-subtitle">
+          Un ensemble de compétences techniques et humaines consolidées au fil des projets et enseignements.
+        </p>
+      </div>
+
+      <div class="row gy-5">
+        <!-- Compétences techniques & barres de progression -->
+        <div class="col-lg-7 reveal-item reveal-delay-1">
+          <h3 class="skills-subtitle">
+            <i class="bi bi-cpu-fill me-2"></i> Langages &amp; Développement
+          </h3>
+
+          <div class="skills-list">
+            <!-- C / C++ -->
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name"><i class="bi bi-filetype-cpp me-2"></i>C / C++ (POO, Pointeurs, STL)</span>
+                <span class="skill-percent">65%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-progress="65"></div>
+              </div>
+            </div>
+
+            <!-- HTML / CSS / Bootstrap -->
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name"><i class="bi bi-filetype-html me-2"></i>HTML5 / CSS3 &amp; Bootstrap 5</span>
+                <span class="skill-percent">80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-progress="80"></div>
+              </div>
+            </div>
+
+            <!-- SQL / PostgreSQL -->
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name"><i class="bi bi-database-fill me-2"></i>Bases de données &amp; PostgreSQL</span>
+                <span class="skill-percent">75%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-progress="75"></div>
+              </div>
+            </div>
+
+            <!-- Python -->
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name"><i class="bi bi-filetype-py me-2"></i>Python (Scripts, Algorithmes)</span>
+                <span class="skill-percent">55%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-progress="55"></div>
+              </div>
+            </div>
+
+            <!-- Bash & Linux -->
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name"><i class="bi bi-terminal-fill me-2"></i>Bash Scripting &amp; Environnement Linux</span>
+                <span class="skill-percent">60%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-progress="60"></div>
+              </div>
+            </div>
+
+            <!-- Git & Versioning -->
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name"><i class="bi bi-git me-2"></i>Git &amp; Gestion de versions GitHub</span>
+                <span class="skill-percent">65%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-progress="65"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Outils de travail (Badges) -->
+          <div class="tools-row mt-4">
+            <h4 class="tools-title"><i class="bi bi-tools me-2 text-primary"></i>Environnements &amp; Outils</h4>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="tool-badge"><i class="bi bi-file-code-fill me-1"></i>VS Code</span>
+              <span class="tool-badge"><i class="bi bi-window-sidebar me-1"></i>Qt Creator</span>
+              <span class="tool-badge"><i class="bi bi-github me-1"></i>GitHub</span>
+              <span class="tool-badge"><i class="bi bi-ubuntu me-1"></i>Linux / Ubuntu</span>
+              <span class="tool-badge"><i class="bi bi-database me-1"></i>pgAdmin</span>
+              <span class="tool-badge"><i class="bi bi-terminal me-1"></i>Shell Bash</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soft skills / Qualités personnelles -->
+        <div class="col-lg-5 reveal-item reveal-delay-2">
+          <h3 class="skills-subtitle">
+            <i class="bi bi-stars me-2"></i> Qualités &amp; Savoir-être
+          </h3>
+
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="soft-card">
+                <i class="bi bi-calendar-check-fill"></i>
+                <span>Organisation</span>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="soft-card">
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Rigueur</span>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="soft-card">
+                <i class="bi bi-lightbulb-fill"></i>
+                <span>Esprit Logique</span>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="soft-card">
+                <i class="bi bi-search-heart-fill"></i>
+                <span>Curiosité Tech</span>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="soft-card">
+                <i class="bi bi-arrow-repeat"></i>
+                <span>Persévérance</span>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="soft-card">
+                <i class="bi bi-people-fill"></i>
+                <span>Travail d'Équipe</span>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="soft-card">
+                <i class="bi bi-shuffle"></i>
+                <span>Adaptabilité &amp; Autonomie</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================
+       SECTION PROJETS (FOND BLANC)
+  ====================================== -->
+  <section id="projects" class="section-padding section-white">
+    <div class="container">
+      <div class="section-header text-center reveal-item">
+        <span class="section-tag"><i class="bi bi-folder-fill"></i> Réalisations</span>
+        <h2 class="section-title">Mes <span class="gradient-text">Projets</span></h2>
+        <p class="section-subtitle">
+          Une sélection de projets applicatifs et académiques illustrant ma progression technique.
+        </p>
+      </div>
+
+      <!-- Filtres interactifs par catégorie -->
+      <div class="project-filters reveal-item">
+        <button class="filter-btn active" data-filter="all">Tous les projets</button>
+        <button class="filter-btn" data-filter="cpp">C / C++</button>
+        <button class="filter-btn" data-filter="web">Développement Web</button>
+        <button class="filter-btn" data-filter="algo">Algorithmique</button>
+      </div>
+
+      <!-- Grille des projets -->
+      <div class="row g-4 justify-content-center">
+
+        <!-- Projet 1 : Bibliothèque Numérique -->
+        <div class="col-md-6 col-lg-6 project-item" data-category="cpp">
+          <div class="project-card">
+            <div class="project-img-wrapper">
+              <img src="assets/bibliotheque.png" alt="Aperçu du projet Bibliothèque Numérique" class="project-image" />
+              <div class="project-overlay">
+                <button type="button" class="overlay-btn" data-bs-toggle="modal" data-bs-target="#modalProject1"
+                  title="Voir les détails">
+                  <i class="bi bi-eye-fill"></i>
+                </button>
+                <a href="https://github.com/repos" target="_blank" rel="noopener noreferrer" class="overlay-btn"
+                  title="Code source sur GitHub">
+                  <i class="bi bi-github"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-tags-row">
+                <span class="project-tag tag-cpp"><i class="bi bi-filetype-cpp me-1"></i>C++</span>
+                <span class="project-tag">Gestion de fichiers</span>
+                <span class="project-tag">CLI / Menus</span>
+              </div>
+              <h4 class="project-title">Bibliothèque Numérique</h4>
+              <p class="project-desc">
+                Application console en C++ assurant la gestion complète d'un fonds documentaire : ajout, modification,
+                recherche paginée, import de volumes depuis des fichiers CSV et export formaté en HTML.
+              </p>
+              <div class="project-footer">
+                <button type="button" class="project-modal-btn" data-bs-toggle="modal" data-bs-target="#modalProject1">
+                  <i class="bi bi-info-circle me-1"></i> Fiche technique
+                </button>
+                <a href="https://github.com/repos" target="_blank" rel="noopener noreferrer" class="project-link">
+                  Code source <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projet 2 : Calculatrice à Polynômes -->
+        <div class="col-md-6 col-lg-6 project-item" data-category="cpp">
+          <div class="project-card">
+            <div class="project-img-wrapper">
+              <img src="assets/calculatrice.png" alt="Aperçu de la Calculatrice à Polynômes" class="project-image" />
+              <div class="project-overlay">
+                <button type="button" class="overlay-btn" data-bs-toggle="modal" data-bs-target="#modalProject2"
+                  title="Voir les détails">
+                  <i class="bi bi-eye-fill"></i>
+                </button>
+                <a href="https://github.com/repos" target="_blank" rel="noopener noreferrer" class="overlay-btn"
+                  title="Code source sur GitHub">
+                  <i class="bi bi-github"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-tags-row">
+                <span class="project-tag tag-cpp"><i class="bi bi-filetype-cpp me-1"></i>C++</span>
+                <span class="project-tag">POO</span>
+                <span class="project-tag">Surcharge d'opérateurs</span>
+              </div>
+              <h4 class="project-title">Calculatrice à Polynômes</h4>
+              <p class="project-desc">
+                Moteur de calcul formel en C++ exploitant la Programmation Orientée Objet. Manipulation de polynômes,
+                calcul de dérivées, addition et évaluation de valeurs grâce à la surcharge des opérateurs mathématiques.
+              </p>
+              <div class="project-footer">
+                <button type="button" class="project-modal-btn" data-bs-toggle="modal" data-bs-target="#modalProject2">
+                  <i class="bi bi-info-circle me-1"></i> Fiche technique
+                </button>
+                <a href="https://github.com/repos" target="_blank" rel="noopener noreferrer" class="project-link">
+                  Code source <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projet 3 : Site Web IUT Informatique -->
+        <div class="col-md-6 col-lg-6 project-item" data-category="web">
+          <div class="project-card">
+            <div class="project-img-wrapper">
+              <img src="assets/site_iut.png" alt="Aperçu du site web IUT Informatique" class="project-image" />
+              <div class="project-overlay">
+                <button type="button" class="overlay-btn" data-bs-toggle="modal" data-bs-target="#modalProject3"
+                  title="Voir les détails">
+                  <i class="bi bi-eye-fill"></i>
+                </button>
+                <a href="https://github.com/repos" target="_blank" rel="noopener noreferrer" class="overlay-btn"
+                  title="Code source sur GitHub">
+                  <i class="bi bi-github"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-tags-row">
+                <span class="project-tag tag-web"><i class="bi bi-filetype-html me-1"></i>HTML / CSS</span>
+                <span class="project-tag">Responsive Design</span>
+                <span class="project-tag">UI / UX</span>
+              </div>
+              <h4 class="project-title">Site Vitrine BUT Informatique</h4>
+              <p class="project-desc">
+                Conception d'un site web informatif destiné à promouvoir le BUT Informatique de l'IUT d'Aix-Marseille (Arles)
+                auprès des futurs étudiants. Navigation structurée, design adaptatif et respect de la charte de l'IUT.
+              </p>
+              <div class="project-footer">
+                <button type="button" class="project-modal-btn" data-bs-toggle="modal" data-bs-target="#modalProject3">
+                  <i class="bi bi-info-circle me-1"></i> Fiche technique
+                </button>
+                <a href="https://github.com/repos" target="_blank" rel="noopener noreferrer" class="project-link">
+                  Code source <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projet 4 : Comparaison d'Algorithmes -->
+        <div class="col-md-6 col-lg-6 project-item" data-category="algo">
+          <div class="project-card">
+            <div class="project-img-wrapper">
+              <img src="assets/comparaison_algos.png" alt="Aperçu de la comparaison d'algorithmes" class="project-image" />
+              <div class="project-overlay">
+                <button type="button" class="overlay-btn" data-bs-toggle="modal" data-bs-target="#modalProject4"
+                  title="Voir les détails">
+                  <i class="bi bi-eye-fill"></i>
+                </button>
+                <a href="https://github.com/repos" target="_blank" rel="noopener noreferrer" class="overlay-btn"
+                  title="Code source sur GitHub">
+                  <i class="bi bi-github"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-tags-row">
+                <span class="project-tag tag-cpp"><i class="bi bi-filetype-cpp me-1"></i>C++</span>
+                <span class="project-tag tag-python"><i class="bi bi-filetype-py me-1"></i>Python</span>
+                <span class="project-tag">Complexité</span>
+                <span class="project-tag">Data Viz</span>
+              </div>
+              <h4 class="project-title">Benchmark &amp; Analyse de Tris</h4>
+              <p class="project-desc">
+                Étude comparative des performances d'algorithmes de tri (Quicksort, Tri par insertion, Tri par sélection).
+                Mesures du temps d'exécution selon la taille et le type de données avec visualisations graphiques comparatives.
+              </p>
+              <div class="project-footer">
+                <button type="button" class="project-modal-btn" data-bs-toggle="modal" data-bs-target="#modalProject4">
+                  <i class="bi bi-info-circle me-1"></i> Fiche technique
+                </button>
+                <a href="https://github.com/repos" target="_blank" rel="noopener noreferrer" class="project-link">
+                  Code source <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================
+       MODALES DE DÉTAIL DES PROJETS
+  ====================================== -->
+  <!-- Modal Projet 1 -->
+  <div class="modal fade" id="modalProject1" tabindex="-1" aria-labelledby="modalProject1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalProject1Label">
+            <i class="bi bi-book-half text-primary me-2"></i> Bibliothèque Numérique · C++
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row gy-3">
+            <div class="col-md-6">
+              <img src="assets/bibliotheque.png" alt="Aperçu Bibliothèque" class="img-fluid rounded border mb-3" />
+            </div>
+            <div class="col-md-6">
+              <h6 class="fw-bold text-dark">Contexte &amp; Objectifs</h6>
+              <p class="text-secondary small">
+                Projet académique visant à concevoir un système robuste de gestion d'ouvrages en ligne de commande avec persistance
+                de données par fichiers.
+              </p>
+              <h6 class="fw-bold text-dark mt-3">Fonctionnalités Clés</h6>
+              <ul class="text-secondary small ps-3">
+                <li>Ajout, modification, recherche par titre/auteur et suppression.</li>
+                <li>Importation automatisée de volumes depuis un format CSV.</li>
+                <li>Export dynamique de la base de données sous forme de catalogue HTML stylisé.</li>
+                <li>Gestion de la pagination pour une lecture fluide en console.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fermer</button>
+          <a href="https://github.com/repos" target="_blank" rel="noopener noreferrer" class="btn btn-primary-custom">
+            Consulter le dépôt GitHub <i class="bi bi-github ms-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Projet 2 -->
+  <div class="modal fade" id="modalProject2" tabindex="-1" aria-labelledby="modalProject2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalProject2Label">
+            <i class="bi bi-calculator-fill text-primary me-2"></i> Calculatrice à Polynômes · C++
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row gy-3">
+            <div class="col-md-6">
+              <img src="assets/calculatrice.png" alt="Aperçu Calculatrice" class="img-fluid rounded border mb-3" />
+            </div>
+            <div class="col-md-6">
+              <h6 class="fw-bold text-dark">Contexte &amp; POO Avancée</h6>
+              <p class="text-secondary small">
+                Mise en application des paradigmes de la Programmation Orientée Objet pour modéliser des objets mathématiques
+                complexes de manière intuitive et rigoureuse.
+              </p>
+              <h6 class="fw-bold text-dark mt-3">Fonctionnalités Clés</h6>
+              <ul class="text-secondary small ps-3">
+                <li>Surcharge d'opérateurs arithmétiques (+, -, *, ==, &lt;&lt;).</li>
+                <li>Calcul de la dérivée formelle d'un polynôme de degré n.</li>
+                <li>Évaluation numérique de P(x) selon la méthode optimisée de Horner.</li>
+                <li>Encapsulation et modularité des classes mathématiques.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fermer</button>
+          <a href="https://github.com/repos" target="_blank" rel="noopener noreferrer" class="btn btn-primary-custom">
+            Consulter le dépôt GitHub <i class="bi bi-github ms-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Projet 3 -->
+  <div class="modal fade" id="modalProject3" tabindex="-1" aria-labelledby="modalProject3Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalProject3Label">
+            <i class="bi bi-browser-chrome text-primary me-2"></i> Site Vitrine BUT Informatique
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row gy-3">
+            <div class="col-md-6">
+              <img src="assets/site_iut.png" alt="Aperçu Site IUT" class="img-fluid rounded border mb-3" />
+            </div>
+            <div class="col-md-6">
+              <h6 class="fw-bold text-dark">Conception Web &amp; UX</h6>
+              <p class="text-secondary small">
+                Projet de communication et développement web visant à guider les futurs étudiants dans leur orientation vers
+                la filière informatique de l'IUT d'Aix-Marseille.
+              </p>
+              <h6 class="fw-bold text-dark mt-3">Points Notables</h6>
+              <ul class="text-secondary small ps-3">
+                <li>Design responsive adapté aux mobiles, tablettes et ordinateurs.</li>
+                <li>Respect de l'identité visuelle officielle de l'université.</li>
+                <li>Organisation claire des maquettes pour les cours, débouchés et SAÉ.</li>
+                <li>Structure HTML5 sémantique et accessibilité web soignée.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fermer</button>
+          <a href="https://github.com/repos" target="_blank" rel="noopener noreferrer" class="btn btn-primary-custom">
+            Consulter le dépôt GitHub <i class="bi bi-github ms-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Projet 4 -->
+  <div class="modal fade" id="modalProject4" tabindex="-1" aria-labelledby="modalProject4Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalProject4Label">
+            <i class="bi bi-graph-up-arrow text-primary me-2"></i> Analyse &amp; Benchmark d'Algorithmes
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row gy-3">
+            <div class="col-md-6">
+              <img src="assets/comparaison_algos.png" alt="Aperçu Comparaison Algos" class="img-fluid rounded border mb-3" />
+            </div>
+            <div class="col-md-6">
+              <h6 class="fw-bold text-dark">Expérimentation &amp; Complexité</h6>
+              <p class="text-secondary small">
+                Mise en place d'un protocole expérimental rigoureux pour confronter la complexité théorique Big-O aux temps
+                d'exécution réels sur machine.
+              </p>
+              <h6 class="fw-bold text-dark mt-3">Aspects Techniques</h6>
+              <ul class="text-secondary small ps-3">
+                <li>Implémentation en C++ des algorithmes : Quicksort, Tri Insertion, Tri Sélection.</li>
+                <li>Génération de jeux de tests variés (tableaux aléatoires, inversés, presque triés).</li>
+                <li>Scripting Python pour l'analyse statistique et le traçage des courbes de performance.</li>
+                <li>Vérification de la complexité O(n log n) vs O(n²).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fermer</button>
+          <a href="https://github.com/repos" target="_blank" rel="noopener noreferrer" class="btn btn-primary-custom">
+            Consulter le dépôt GitHub <i class="bi bi-github ms-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================
+       SECTION PARCOURS (FOND GRIS DOUX)
+  ====================================== -->
+  <section id="timeline" class="section-padding section-subtle">
+    <div class="container">
+      <div class="section-header text-center reveal-item">
+        <span class="section-tag"><i class="bi bi-mortarboard-fill"></i> Éducation</span>
+        <h2 class="section-title">Mon <span class="gradient-text">Parcours</span> Académique</h2>
+        <p class="section-subtitle">
+          Une formation axée sur l'excellence scientifique et la maîtrise du développement logiciel.
+        </p>
+      </div>
+
+      <div class="timeline">
+
+        <!-- Étape 1 : BUT Informatique -->
+        <div class="timeline-item reveal-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2025 – 2026</span>
+            <h4 class="timeline-title">BUT Informatique (1ère année)</h4>
+            <p class="timeline-place">
+              <i class="bi bi-geo-alt-fill me-1"></i> IUT d'Aix-Marseille · Site d'Arles, France
+            </p>
+            <p class="timeline-desc">
+              Formation universitaire technologique approfondie : algorithmique avancée, programmation orientée objet (C++),
+              conception de bases de données relationnelles (PostgreSQL), développement web, systèmes et réseaux.
+            </p>
+            <span class="timeline-badge current"><i class="bi bi-clock-history me-1"></i> En cours</span>
+          </div>
+        </div>
+
+        <!-- Étape 2 : Licence 1 Informatique -->
+        <div class="timeline-item timeline-item--right reveal-item reveal-delay-1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2024 – 2025</span>
+            <h4 class="timeline-title">Licence 1 en Informatique</h4>
+            <p class="timeline-place">
+              <i class="bi bi-geo-alt-fill me-1"></i> Université Cheikh Ahmadoul Khadim · Touba, Sénégal
+            </p>
+            <p class="timeline-desc">
+              Première immersion universitaire dans les sciences informatiques : algorithmique fondamentale, programmation
+              en langage C, logique mathématique, algèbre et découverte des architectures systèmes.
+            </p>
+            <span class="timeline-badge"><i class="bi bi-check2-circle me-1"></i> Validée</span>
+          </div>
+        </div>
+
+        <!-- Étape 3 : Baccalauréat Scientifique -->
+        <div class="timeline-item reveal-item reveal-delay-2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2024</span>
+            <h4 class="timeline-title">Baccalauréat Scientifique (Série S2)</h4>
+            <p class="timeline-place">
+              <i class="bi bi-geo-alt-fill me-1"></i> Sciences Expérimentales · Sénégal
+            </p>
+            <p class="timeline-desc">
+              Obtention du baccalauréat avec dominante Mathématiques et Sciences Physiques, développant un esprit d'analyse,
+              la logique et la rigueur de raisonnement.
+            </p>
+            <span class="timeline-badge"><i class="bi bi-patch-check-fill me-1"></i> Diplômée</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================
+       SECTION CONTACT (FOND BLANC)
+  ====================================== -->
+  <section id="contact" class="section-padding section-white">
+    <div class="container">
+      <div class="section-header text-center reveal-item">
+        <span class="section-tag"><i class="bi bi-send-fill"></i> Échangeons ensemble</span>
+        <h2 class="section-title">Me <span class="gradient-text">Contacter</span></h2>
+        <p class="section-subtitle">
+          À la recherche d'une stagiaire motivée ou envie d'échanger sur un projet ? Je serais ravie de vous répondre !
+        </p>
+      </div>
+
+      <div class="row gy-5 align-items-start">
+
+        <!-- Colonne Informations de contact -->
+        <div class="col-lg-5 reveal-item reveal-delay-1">
+          <div class="contact-info-card clean-card">
+            <h4 class="contact-info-title">Discutons de votre opportunité</h4>
+            <p class="contact-info-text">
+              Actuellement à la recherche d'un stage conventionné en développement informatique. Je suis disponible et mobile.
+              N'hésitez pas à me contacter par email ou via mes réseaux.
+            </p>
+
+            <!-- Détail Email -->
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <i class="bi bi-envelope-fill"></i>
+              </div>
+              <div>
+                <span class="contact-detail-label">Adresse Email</span>
+                <span class="contact-detail-value">
+                  <a href="mailto:seyendeyeseynabou4@gmail.com">seyendeyeseynabou4@gmail.com</a>
+                  <button type="button" class="btn-copy-email" id="btnCopyEmail" title="Copier l'email dans le presse-papiers">
+                    <i class="bi bi-copy"></i> Copier
+                  </button>
+                </span>
+              </div>
+            </div>
+
+            <!-- Détail GitHub -->
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <i class="bi bi-github"></i>
+              </div>
+              <div>
+                <span class="contact-detail-label">GitHub</span>
+                <a href="https://github.com/repos" target="_blank" rel="noopener noreferrer" class="contact-detail-value">
+                  github.com/repos <i class="bi bi-arrow-up-right ms-1 small"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Détail Localisation -->
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <div>
+                <span class="contact-detail-label">Localisation</span>
+                <span class="contact-detail-value">Arles (13200), France</span>
+              </div>
+            </div>
+
+            <!-- Réseaux sociaux -->
+            <div class="contact-socials d-flex gap-3 mt-4">
+              <a href="https://github.com/repos" target="_blank" rel="noopener noreferrer" class="social-icon-lg"
+                title="Profil GitHub">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="mailto:seyendeyeseynabou4@gmail.com" class="social-icon-lg" title="Envoyer un email">
+                <i class="bi bi-envelope-fill"></i>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-lg"
+                title="Profil LinkedIn">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Colonne Formulaire de contact -->
+        <div class="col-lg-7 reveal-item reveal-delay-2">
+          <form class="contact-form clean-card" id="portfolioContactForm" action="mailto:seyendeyeseynabou4@gmail.com"
+            method="post" enctype="text/plain">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="contactName" class="form-label-custom">Votre Nom &amp; Prénom</label>
+                <input type="text" id="contactName" name="Nom" class="form-control-custom"
+                  placeholder="Ex : Marie Dupont" required />
+              </div>
+
+              <div class="col-md-6">
+                <label for="contactEmail" class="form-label-custom">Votre Email Professionnel</label>
+                <input type="email" id="contactEmail" name="Email" class="form-control-custom"
+                  placeholder="nom@entreprise.com" required />
+              </div>
+
+              <div class="col-12">
+                <label for="contactSubject" class="form-label-custom">Objet de la prise de contact</label>
+                <input type="text" id="contactSubject" name="Sujet" class="form-control-custom"
+                  placeholder="Ex : Proposition de stage en développement C++ / Web" required />
+              </div>
+
+              <div class="col-12">
+                <label for="contactMessage" class="form-label-custom">Votre Message</label>
+                <textarea id="contactMessage" name="Message" class="form-control-custom" rows="5"
+                  placeholder="Bonjour Seynabou, j'ai découvert votre portfolio et j'aimerais échanger avec vous concernant..."
+                  required></textarea>
+              </div>
+
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary-custom w-100 py-3" id="btnSubmitForm">
+                  <span>Envoyer mon message</span> <i class="bi bi-send-fill ms-2"></i>
+                </button>
+              </div>
+
+              <!-- Message de retour d'envoi -->
+              <div class="col-12">
+                <div class="form-alert success" id="formSuccessAlert">
+                  <i class="bi bi-check-circle-fill me-2"></i>
+                  Merci pour votre message ! Votre client de messagerie va s'ouvrir pour finaliser l'envoi.
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================
+       FOOTER
+  ====================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <!-- Marque / Logo -->
+        <div class="col-md-4 text-center text-md-start">
+          <a class="footer-brand" href="#hero">
+            <span class="brand-bracket">&lt;</span>Seynabou SEYE<span class="brand-bracket">/&gt;</span>
+          </a>
+        </div>
+
+        <!-- Citation & Copyright -->
+        <div class="col-md-4 text-center">
+          <p class="footer-tagline">« Concevoir avec passion, coder avec rigueur. »</p>
+          <p class="footer-copy">&copy; 2026 SEYE Ndeye Seynabou. Tous droits réservés.</p>
+        </div>
+
+        <!-- Réseaux sociaux footer -->
+        <div class="col-md-4 text-center text-md-end">
+          <div class="d-flex justify-content-center justify-content-md-end gap-2">
+            <a href="https://github.com/repos" target="_blank" rel="noopener noreferrer" class="footer-social-link"
+              title="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="mailto:seyendeyeseynabou4@gmail.com" class="footer-social-link" title="Email">
+              <i class="bi bi-envelope-fill"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-link"
+              title="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="#hero" class="btn-footer-top ms-2" title="Retourner en haut de page">
+              <i class="bi bi-arrow-up"></i> Haut
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- ======================================
+       SCRIPTS INTERACTIFS & DYNAMIQUES
+  ====================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      /* ----------------------------------------------------
+         1. MACHINE À ÉCRIRE (TYPING EFFECT)
+      ---------------------------------------------------- */
+      const typingTextElement = document.getElementById('typing-text');
+      const wordsToType = [
+        "Étudiante en BUT Informatique",
+        "Développeuse C++ & Web",
+        "Passionnée d'Algorithmique",
+        "À la recherche d'un stage"
+      ];
+
+      let wordIndex = 0;
+      let charIndex = 0;
+      let isDeleting = false;
+      let typeSpeed = 100;
+
+      function typeCycle() {
+        if (!typingTextElement) return;
+
+        const currentWord = wordsToType[wordIndex];
+
+        if (isDeleting) {
+          typingTextElement.textContent = currentWord.substring(0, charIndex - 1);
+          charIndex--;
+          typeSpeed = 45;
+        } else {
+          typingTextElement.textContent = currentWord.substring(0, charIndex + 1);
+          charIndex++;
+          typeSpeed = 100;
+        }
+
+        if (!isDeleting && charIndex === currentWord.length) {
+          typeSpeed = 1800; // Pause à la fin du mot
+          isDeleting = true;
+        } else if (isDeleting && charIndex === 0) {
+          isDeleting = false;
+          wordIndex = (wordIndex + 1) % wordsToType.length;
+          typeSpeed = 400; // Pause avant le mot suivant
+        }
+
+        setTimeout(typeCycle, typeSpeed);
+      }
+
+      // Démarrage de la machine à écrire
+      setTimeout(typeCycle, 500);
+
+      /* ----------------------------------------------------
+         2. APPARITION AU SCROLL (SCROLL REVEAL)
+      ---------------------------------------------------- */
+      const revealItems = document.querySelectorAll('.reveal-item');
+      
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        root: null,
+        threshold: 0.12
+      });
+
+      revealItems.forEach(item => revealObserver.observe(item));
+
+      /* ----------------------------------------------------
+         3. ANIMATION DES BARRES DE COMPÉTENCES
+      ---------------------------------------------------- */
+      const skillFills = document.querySelectorAll('.skill-fill');
+      
+      const skillsObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const bar = entry.target;
+            const progress = bar.getAttribute('data-progress');
+            bar.style.width = progress + '%';
+            observer.unobserve(bar);
+          }
+        });
+      }, {
+        threshold: 0.25
+      });
+
+      skillFills.forEach(bar => skillsObserver.observe(bar));
+
+      /* ----------------------------------------------------
+         4. COMPTEURS DE STATISTIQUES ANIMÉS
+      ---------------------------------------------------- */
+      const counters = document.querySelectorAll('.count-up');
+      
+      const counterObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const counter = entry.target;
+            const target = +counter.getAttribute('data-target');
+            const duration = 1500; // ms
+            const stepTime = 30;
+            const steps = duration / stepTime;
+            const increment = target / steps;
+            let current = 0;
+
+            const timer = setInterval(() => {
+              current += increment;
+              if (current >= target) {
+                counter.textContent = target;
+                clearInterval(timer);
+              } else {
+                counter.textContent = Math.ceil(current);
+              }
+            }, stepTime);
+
+            observer.unobserve(counter);
+          }
+        });
+      }, {
+        threshold: 0.5
+      });
+
+      counters.forEach(counter => counterObserver.observe(counter));
+
+      /* ----------------------------------------------------
+         5. FILTRAGE DYNAMIQUE DES PROJETS
+      ---------------------------------------------------- */
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const projectItems = document.querySelectorAll('.project-item');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const filterValue = btn.getAttribute('data-filter');
+
+          projectItems.forEach(item => {
+            const itemCategory = item.getAttribute('data-category');
+            if (filterValue === 'all' || itemCategory === filterValue) {
+              item.style.display = 'block';
+              item.style.animation = 'fadeInUp 0.4s ease both';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      /* ----------------------------------------------------
+         6. NAVBAR AU DÉFILEMENT (COMPACTE AU SCROLL)
+      ---------------------------------------------------- */
+      const mainNav = document.getElementById('mainNav');
+
+      window.addEventListener('scroll', () => {
+        const scrollPos = window.scrollY;
+        if (scrollPos > 40) {
+          mainNav.classList.add('scrolled');
+        } else {
+          mainNav.classList.remove('scrolled');
+        }
+      });
+
+      /* ----------------------------------------------------
+         7. COPIE DE L'EMAIL EN 1 CLIC
+      ---------------------------------------------------- */
+      const copyBtn = document.getElementById('btnCopyEmail');
+      if (copyBtn) {
+        copyBtn.addEventListener('click', () => {
+          const email = "seyendeyeseynabou4@gmail.com";
+          navigator.clipboard.writeText(email).then(() => {
+            const originalText = copyBtn.innerHTML;
+            copyBtn.innerHTML = '<i class="bi bi-check2"></i> Copié !';
+            copyBtn.style.background = 'var(--primary)';
+            copyBtn.style.color = '#fff';
+            copyBtn.style.borderColor = 'var(--primary)';
+
+            setTimeout(() => {
+              copyBtn.innerHTML = originalText;
+              copyBtn.style.background = '';
+              copyBtn.style.color = '';
+              copyBtn.style.borderColor = '';
+            }, 2000);
+          });
+        });
+      }
+
+      /* ----------------------------------------------------
+         8. FERMETURE DU MENU MOBILE AU CLIC SUR UN LIEN
+      ---------------------------------------------------- */
+      const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+      const navCollapse = document.getElementById('navMenu');
+      const bsCollapse = bootstrap.Collapse.getInstance(navCollapse) || new bootstrap.Collapse(navCollapse, { toggle: false });
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          if (window.innerWidth < 992 && navCollapse.classList.contains('show')) {
+            bsCollapse.hide();
+          }
+        });
+      });
+
+      /* ----------------------------------------------------
+         9. GESTION DE SOUMISSION DU FORMULAIRE
+      ---------------------------------------------------- */
+      const contactForm = document.getElementById('portfolioContactForm');
+      const formAlert = document.getElementById('formSuccessAlert');
+
+      if (contactForm && formAlert) {
+        contactForm.addEventListener('submit', (e) => {
+          formAlert.style.display = 'block';
+          setTimeout(() => {
+            formAlert.style.display = 'none';
+          }, 8000);
+        });
+      }
+
+      /* ----------------------------------------------------
+         10. CURSEUR FLUIDE SUIVEUR DE MOUVEMENTS (MOUSE FOLLOWER)
+      ---------------------------------------------------- */
+      const cursorDot = document.getElementById('cursorDot');
+      const cursorFollower = document.getElementById('cursorFollower');
+
+      if (cursorDot && cursorFollower && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+        let mouseX = -100;
+        let mouseY = -100;
+        let followerX = -100;
+        let followerY = -100;
+        let isVisible = false;
+
+        // Positionnement instantané du point et suivi fluide du cercle
+        window.addEventListener('mousemove', (e) => {
+          mouseX = e.clientX;
+          mouseY = e.clientY;
+
+          if (!isVisible) {
+            cursorDot.style.opacity = '1';
+            cursorFollower.style.opacity = '1';
+            isVisible = true;
+          }
+
+          cursorDot.style.left = `${mouseX}px`;
+          cursorDot.style.top = `${mouseY}px`;
+        });
+
+        document.addEventListener('mouseleave', () => {
+          cursorDot.style.opacity = '0';
+          cursorFollower.style.opacity = '0';
+          isVisible = false;
+        });
+
+        document.addEventListener('mouseenter', () => {
+          cursorDot.style.opacity = '1';
+          cursorFollower.style.opacity = '1';
+          isVisible = true;
+        });
+
+        // Animation avec inertie souple
+        function animateFollower() {
+          followerX += (mouseX - followerX) * 0.16;
+          followerY += (mouseY - followerY) * 0.16;
+
+          cursorFollower.style.left = `${followerX}px`;
+          cursorFollower.style.top = `${followerY}px`;
+
+          requestAnimationFrame(animateFollower);
+        }
+        requestAnimationFrame(animateFollower);
+
+        // Agrandissement magnétique au survol des éléments interactifs
+        const hoverTargets = document.querySelectorAll('a, button, input, textarea, .project-card, .soft-card, .stat-box, .tool-badge, .filter-btn, .highlight-pill');
+        hoverTargets.forEach(el => {
+          el.addEventListener('mouseenter', () => {
+            cursorFollower.classList.add('is-hovering');
+            cursorDot.classList.add('is-hovering');
+          });
+          el.addEventListener('mouseleave', () => {
+            cursorFollower.classList.remove('is-hovering');
+            cursorDot.classList.remove('is-hovering');
+          });
+        });
+      }
+
+      /* ==========================================
+         11. TOGGLE THÈME CLAIR / SOMBRE
+         ========================================== */
+      const themeToggle = document.getElementById('themeToggle');
+      const themeIcon   = document.getElementById('themeIcon');
+      const htmlEl      = document.documentElement;
+
+      // Restaurer la préférence sauvegardée
+      const savedTheme = localStorage.getItem('portfolio-theme');
+      if (savedTheme === 'dark') {
+        htmlEl.setAttribute('data-theme', 'dark');
+        themeIcon.className = 'bi bi-sun-fill';
+      }
+
+      themeToggle.addEventListener('click', () => {
+        const isDark = htmlEl.getAttribute('data-theme') === 'dark';
+        if (isDark) {
+          htmlEl.removeAttribute('data-theme');
+          themeIcon.className = 'bi bi-moon-fill';
+          localStorage.setItem('portfolio-theme', 'light');
+        } else {
+          htmlEl.setAttribute('data-theme', 'dark');
+          themeIcon.className = 'bi bi-sun-fill';
+          localStorage.setItem('portfolio-theme', 'dark');
+        }
+      });
+
+    });
+  </script>
+</body>
+
+</html>
