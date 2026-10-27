@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portfolio de Seynabou – Étudiante en BUT Informatique, développeuse en devenir passionnée par la tech et le code." />
+  <title>Seynabou| Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet" />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="90">
+
+  <!-- ======================================
+       NAVBAR
+  ====================================== -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <!-- Logo / Nom -->
+      <a class="navbar-brand" href="#hero">
+        <span class="brand-bracket">&lt;</span>SEYE Ndeye Seynabou<span class="brand-bracket">/&gt;</span>
+      </a>
+
+      <!-- Hamburger -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="toggler-icon"></span>
+        <span class="toggler-icon"></span>
+        <span class="toggler-icon"></span>
+      </button>
+
+      <!-- Menu -->
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#hero">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projets</a></li>
+          <li class="nav-item"><a class="nav-link" href="#timeline">Parcours</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ======================================
+       SECTION HERO
+  ====================================== -->
+  <section id="hero" class="hero-section d-flex align-items-center">
+    <!-- Particules / blobs décoratifs -->
+    <div class="hero-blob hero-blob--1"></div>
+    <div class="hero-blob hero-blob--2"></div>
+    <div class="hero-blob hero-blob--3"></div>
+
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <!-- Texte -->
+        <div class="col-lg-6 hero-text" data-aos="fade-right">
+          <!-- <p class="hero-greeting"> Bonjour, je suis</p> -->
+          <h1 class="hero-name">Mon parcours dans le monde du code</h1>
+          <h2 class="hero-tagline">
+           Future ingénieure en informatique<br />
+            <span class="typing-wrapper">
+              <span id="typing-text" class="typing-text"></span><span class="typing-cursor">|</span>
+            </span>
+          </h2>
+          <p class="hero-desc">
+            Passionnée par le développement et les nouvelles technologies.<br class="d-none d-md-block" />
+            Je construis des solutions, ligne par ligne.
+          </p>
+          <div class="hero-actions d-flex flex-wrap gap-3 mt-4">
+            <a href="#projects" class="btn btn-primary-custom">
+              Voir mes projets <i class="bi bi-arrow-right ms-1"></i>
+            </a>
+            <a href="#contact" class="btn btn-outline-custom">
+              Me contacter
+            </a>
+          </div>
+          <!-- Réseaux sociaux hero -->
+          <div class="hero-socials d-flex gap-3 mt-4">
+            <a href="https://github.com/repos" target="_blank" class="social-icon" title="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="mailto:seyendeyeseynabou4@gmail.com" class="social-icon" title="Email">
+              <i class="bi bi-envelope-fill"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Illustration -->
+        <div class="col-lg-6 d-flex justify-content-center" data-aos="fade-left">
+          <div class="hero-img-wrapper">
+            <img src="assets/hero_feminine.png" alt="Illustration développeuse" class="hero-illustration" />
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator">
+        <span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================
+       SECTION À PROPOS
+  ====================================== -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="section-header text-center mb-5" data-aos="fade-up">
+        <span class="section-tag">Qui suis-je ?</span>
+        <h2 class="section-title">À <span class="gradient-text">propos</span> de moi</h2>
+      </div>
+
+      <div class="row align-items-center gy-5">
+        <!-- Avatar -->
+        <div class="col-lg-4 d-flex justify-content-center" data-aos="fade-right" data-aos-delay="100">
+          <div class="about-avatar-wrapper">
+            <div class="avatar-ring">
+              <div class="avatar-placeholder">
+                <img src="assets/hero-photo.jpg" alt="Seynabou" class="avatar-photo" />
+              </div>
+            </div>
+            <div class="about-badge">
+              <i class="bi bi-stars"></i> BUT Info · 1ère année
+            </div>
+          </div>
+        </div>
+
+        <!-- Texte -->
+        <div class="col-lg-8" data-aos="fade-left" data-aos-delay="150">
+          <div class="about-card glass-card">
+            <p class="about-text">
+              Je suis étudiante en première année de <strong>BUT Informatique</strong>,
+              passionnée par le développement et les nouvelles technologies.
+            </p>
+            <p class="about-text">
+              Au cours de ma formation, j'acquiers des compétences en programmation et en
+              résolution de problèmes, que je mets en pratique à travers différents projets.
+            </p>
+            <p class="about-text mb-4">
+              <strong>Sérieuse, curieuse et motivée</strong>, je cherche constamment à progresser
+              et à approfondir mes connaissances dans le domaine de l'informatique.
+            </p>
+
+            <!-- Stats rapides -->
+            <div class="row g-3 about-stats">
+              <div class="col-6 col-md-3">
+                <div class="stat-box">
+                  <span class="stat-number">4</span>
+                  <span class="stat-label">Projets</span>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="stat-box">
+                  <span class="stat-number">7</span>
+                  <span class="stat-label">Langages</span>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="stat-box">
+                  <span class="stat-number">1</span>
+                  <span class="stat-label">Année BUT</span>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="stat-box">
+                  <span class="stat-number">100</span>
+                  <span class="stat-label">% Motivée</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================
+       SECTION COMPÉTENCES
+  ====================================== -->
+  <section id="skills" class="section-padding section-dark">
+    <div class="container">
+      <div class="section-header text-center mb-5" data-aos="fade-up">
+        <span class="section-tag">Mes outils</span>
+        <h2 class="section-title">Mes <span class="gradient-text">Compétences</span></h2>
+      </div>
+
+      <div class="row gy-5">
+
+        <!-- Compétences techniques -->
+        <div class="col-lg-7" data-aos="fade-right" data-aos-delay="100">
+          <h3 class="skills-subtitle"><i class="bi bi-cpu-fill me-2"></i>Techniques</h3>
+
+          <div class="skills-grid">
+
+            <div class="skill-item" data-delay="0">
+              <div class="skill-header">
+                <span class="skill-name"><i class="bi bi-braces me-2"></i>Python</span>
+                <span class="skill-percent">55%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="55"></div>
+              </div>
+            </div>
+
+            <div class="skill-item" data-delay="100">
+              <div class="skill-header">
+                <span class="skill-name"><i class="bi bi-braces me-2"></i>C / C++</span>
+                <span class="skill-percent">65%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="65"></div>
+              </div>
+            </div>
+
+            <div class="skill-item" data-delay="200">
+              <div class="skill-header">
+                <span class="skill-name"><i class="bi bi-terminal me-2"></i>Bash</span>
+                <span class="skill-percent">60%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="60"></div>
+              </div>
+            </div>
+
+            <div class="skill-item" data-delay="300">
+              <div class="skill-header">
+                <span class="skill-name"><i class="bi bi-code-slash me-2"></i>HTML / CSS</span>
+                <span class="skill-percent">80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="80"></div>
+              </div>
+            </div>
+
+            <div class="skill-item" data-delay="400">
+              <div class="skill-header">
+                <span class="skill-name"><i class="bi bi-database me-2"></i>SQL / PostgreSQL</span>
+                <span class="skill-percent">80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="80"></div>
+              </div>
+            </div>
+
+            <div class="skill-item" data-delay="500">
+              <div class="skill-header">
+                <span class="skill-name"><i class="bi bi-git me-2"></i>Git / GitHub</span>
+                <span class="skill-percent">60%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="60"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Outils (badges) -->
+          <div class="tools-row mt-4 d-flex flex-wrap gap-2">
+            <span class="tool-badge"><i class="bi bi-vscode me-1"></i>VS Code</span>
+            <span class="tool-badge">Qt Creator</span>
+            <span class="tool-badge"><i class="bi bi-github me-1"></i>GitHub</span>
+            <span class="tool-badge"><i class="bi bi-terminal-fill me-1"></i>Terminal</span>
+          </div>
+        </div>
+
+        <!-- Soft skills -->
+        <div class="col-lg-5" data-aos="fade-left" data-aos-delay="100">
+          <h3 class="skills-subtitle"><i class="bi bi-person-badge-fill me-2"></i>Personnelles</h3>
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="soft-card" data-aos="zoom-in" data-aos-delay="0"><i
+                  class="bi bi-calendar-check-fill"></i><span>Organisation</span></div>
+            </div>
+            <div class="col-6">
+              <div class="soft-card" data-aos="zoom-in" data-aos-delay="80"><i
+                  class="bi bi-check-circle-fill"></i><span>Rigueur</span></div>
+            </div>
+            <div class="col-6">
+              <div class="soft-card" data-aos="zoom-in" data-aos-delay="160"><i
+                  class="bi bi-lightbulb-fill"></i><span>Esprit logique</span></div>
+            </div>
+            <div class="col-6">
+              <div class="soft-card" data-aos="zoom-in" data-aos-delay="240"><i
+                  class="bi bi-search-heart-fill"></i><span>Curiosité</span></div>
+            </div>
+            <div class="col-6">
+              <div class="soft-card" data-aos="zoom-in" data-aos-delay="320"><i
+                  class="bi bi-arrow-repeat"></i><span>Persévérance</span></div>
+            </div>
+            <div class="col-6">
+              <div class="soft-card" data-aos="zoom-in" data-aos-delay="400"><i
+                  class="bi bi-people-fill"></i><span>Travail en équipe</span></div>
+            </div>
+            <div class="col-12">
+              <div class="soft-card" data-aos="zoom-in" data-aos-delay="480"><i
+                  class="bi bi-shuffle"></i><span>Adaptabilité</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================
+       SECTION PROJETS
+  ====================================== -->
+  <section id="projects" class="section-padding">
+    <div class="container">
+      <div class="section-header text-center mb-5" data-aos="fade-up">
+        <span class="section-tag">Ce que j'ai construit</span>
+        <h2 class="section-title">Mes <span class="gradient-text">Projets</span></h2>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+
+        <!-- Projet 1 : Bibliothèque -->
+        <div class="col-md-6 col-lg-5" data-aos="fade-up" data-aos-delay="0">
+          <div class="project-card">
+            <img src="assets/bibliotheque.png" alt="Image de la Bibliothèque" class="project-image" />
+            <span class="project-tag"> C++</span>
+            <h4 class="project-title">Bibliothèque numèrique</h4>
+            <p class="project-desc text-justify">
+              Application en ligne de commande développée en C++ permettant de gérer une bibliothèque de livres.
+              Elle permet de consulter, ajouter, rechercher et supprimer des références, ainsi que d’importer des livres depuis un fichier CSV et d’exporter la bibliothèque en HTML.
+              L’application propose une navigation claire avec des menus, un affichage paginé et une gestion des données via des fichiers.
+            </p>
+          </div>
+        </div>
+
+        <!-- Projet 2 : Calculatrice -->
+        <div class="col-md-6 col-lg-5" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-card">
+            <img src="assets/calculatrice.png" alt="Image de la Calculatrice" class="project-image" />
+            <span class="project-tag">C++</span>
+            <h4 class="project-title">Calculatrice à polynômes</h4>
+            <p class="project-desc text-justify">
+              Calculatrice développée en C++ permettant de créer et manipuler des polynômes.
+              Elle permet d’effectuer des opérations comme l’addition, la dérivation, la comparaison, ainsi que le calcul de la valeur d’un polynôme pour une valeur donnée.
+              Le projet utilise la programmation orientée objet et la surcharge d’opérateurs pour rendre l’utilisation simple et proche de l’écriture mathématique.
+            </p>
+
+          </div>
+        </div>
+
+        <!-- Projet 3 : Site IUT -->
+        <div class="col-md-6 col-lg-5" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-card">
+            <img src="assets/site_iut.png" alt="Image du Site IUT" class="project-image" />
+            <span class="project-tag">HTML / CSS</span>
+            <h4 class="project-title">Site web IUT</h4>
+            <p class="project-desc text-justify">
+              Site web développé en HTML/CSS visant à présenter le <strong>BUT</strong> Informatique de l’IUT d’Aix-Marseille à des lycéens.
+              Il permet de découvrir la formation, les compétences acquises, le parcours proposé à Arles, les débouchés professionnels ainsi que l’organisation des cours et des SAÉ.
+              Le site propose une navigation claire avec différentes sections et respecte la charte graphique de l’IUT.
+            </p>
+
+          </div>
+        </div>
+
+        <!-- Projet 4 : Comparaison algo -->
+        <div class="col-md-6 col-lg-5" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-card">
+            <img src="assets/comparaison_algos.png" alt="Image de comparaison d'algorithmes" class="project-image" />
+            <span class="project-tag">Python / C++</span>
+            <h4 class="project-title">Comparaison d'algos</h4>
+            <p class="project-desc text-justify">
+              Projet réalisé en C++ visant à comparer les performances de différents algorithmes de tri.
+              Il consiste à tester plusieurs méthodes (comme quicksort, insertion sort ou selection sort) sur différents types de données et tailles de tableaux, puis à analyser leur temps d’exécution.
+              Les résultats sont ensuite représentés sous forme de graphiques afin de mieux visualiser les différences de performance.
+            </p>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================
+       SECTION PARCOURS (TIMELINE)
+  ====================================== -->
+  <section id="timeline" class="section-padding section-dark">
+    <div class="container">
+      <div class="section-header text-center mb-5" data-aos="fade-up">
+        <span class="section-tag">Mon chemin</span>
+        <h2 class="section-title">Mon <span class="gradient-text">Parcours</span></h2>
+      </div>
+
+      <div class="timeline">
+
+        <!-- Entrée 1 -->
+        <div class="timeline-item" data-aos="fade-right" data-aos-delay="0">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-year">2025 – 2026</span>
+            <h4 class="timeline-title">BUT Informatique</h4>
+            <p class="timeline-place"><i class="bi bi-geo-alt-fill me-1"></i>IUT Aix-Marseille · Arles</p>
+            <p class="timeline-desc">
+              Formation universitaire technologique en informatique : programmation, bases de données, réseaux,
+              développement logiciel.
+            </p>
+            <span class="timeline-badge current">En cours</span>
+          </div>
+        </div>
+
+        <!-- Entrée 2 -->
+        <div class="timeline-item timeline-item--right" data-aos="fade-left" data-aos-delay="150">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-year">2024 – 2025</span>
+            <h4 class="timeline-title">Informatique – Licence</h4>
+            <p class="timeline-place"><i class="bi bi-geo-alt-fill me-1"></i>Université Cheikh Ahmadoul Khadim · Sénégal
+            </p>
+            <p class="timeline-desc">
+              Première expérience universitaire en informatique : algorithmique, programmation C et introduction aux
+              systèmes.
+            </p>
+          </div>
+        </div>
+
+        <!-- Entrée 3 -->
+        <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-year">2024</span>
+            <h4 class="timeline-title">Baccalauréat S2</h4>
+            <p class="timeline-place"><i class="bi bi-geo-alt-fill me-1"></i>Sciences Expérimentales · Sénégal</p>
+            <p class="timeline-desc">
+              Obtention du Bac série S2 (Sciences expérimentales), avec une orientation marquée vers les matières
+              scientifiques.
+            </p>
+            <span class="timeline-badge">Diplômée</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================
+       SECTION CONTACT
+  ====================================== -->
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <div class="section-header text-center mb-5" data-aos="fade-up">
+        <span class="section-tag">Travaillons ensemble</span>
+        <h2 class="section-title">Me <span class="gradient-text">Contacter</span></h2>
+      </div>
+
+      <div class="row gy-5 align-items-start">
+
+        <!-- Infos contact -->
+        <div class="col-lg-5" data-aos="fade-right" data-aos-delay="100">
+          <div class="contact-info-card glass-card">
+            <h4 class="contact-info-title">Restons en contact</h4>
+            <p class="contact-info-text">
+              Je suis ouverte aux opportunités de stage, projets collaboratifs ou simplement à une belle conversation
+              sur la tech ! N'hésitez pas à m'écrire.
+            </p>
+
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon"><i class="bi bi-envelope-fill"></i></div>
+              <div>
+                <span class="contact-detail-label">Email</span>
+                <a href="mailto:seyendeyeseynabou4@gmail.com" class="contact-detail-value">
+                  seyendeyeseynabou4@gmail.com
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon"><i class="bi bi-github"></i></div>
+              <div>
+                <span class="contact-detail-label">GitHub</span>
+                <a href="https://github.com/repos" target="_blank" class="contact-detail-value">
+                  github.com/repos
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon"><i class="bi bi-geo-alt-fill"></i></div>
+              <div>
+                <span class="contact-detail-label">Localisation</span>
+                <span class="contact-detail-value">Arles, France</span>
+              </div>
+            </div>
+
+            <!-- Réseaux sociaux -->
+            <div class="contact-socials d-flex gap-3 mt-4">
+              <a href="https://github.com/repos" target="_blank" class="social-icon-lg" title="GitHub">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="mailto:seyendeyeseynabou4@gmail.com" class="social-icon-lg" title="Email">
+                <i class="bi bi-envelope-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulaire -->
+        <div class="col-lg-7" data-aos="fade-left" data-aos-delay="100">
+          <form class="contact-form glass-card" action="mailto:seyendeyeseynabou4@gmail.com" method="post"
+            enctype="text/plain">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="contactName" class="form-label-custom">Nom complet</label>
+                <input type="text" id="contactName" name="Nom" class="form-control-custom" placeholder="Prénom  Nom"
+                  required />
+              </div>
+              <div class="col-md-6">
+                <label for="contactEmail" class="form-label-custom">Email</label>
+                <input type="email" id="contactEmail" name="Email" class="form-control-custom"
+                  placeholder="prenom@email.com" required />
+              </div>
+              <div class="col-12">
+                <label for="contactSubject" class="form-label-custom">Sujet</label>
+                <input type="text" id="contactSubject" name="Sujet" class="form-control-custom"
+                  placeholder="Ex : Proposition de stage" required />
+              </div>
+              <div class="col-12">
+                <label for="contactMessage" class="form-label-custom">Message</label>
+                <textarea id="contactMessage" name="Message" class="form-control-custom" rows="5"
+                  placeholder="Bonjour, je voudrais vous contacter à propos de..." required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary-custom w-100">
+                  Envoyer le message <i class="bi bi-send-fill ms-1"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================
+       FOOTER
+  ====================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row align-items-center gy-3">
+        <div class="col-md-4 text-center text-md-start">
+          <a class="footer-brand" href="#hero">
+            <span class="brand-bracket">&lt;</span>SEYE Ndeye Seynabou<span class="brand-bracket">/&gt;</span>
+          </a>
+        </div>
+        <div class="col-md-4 text-center">
+          <p class="footer-tagline">Construire le futur, une ligne de code à la fois</p>
+          <p class="footer-copy">&copy; 2026 SEYE NdeyeSeynabou. Tous droits réservés.</p>
+        </div>
+        <div class="col-md-4 text-center text-md-end">
+          <div class="footer-socials d-flex justify-content-center justify-content-md-end gap-3">
+            <a href="https://github.com/repos" target="_blank" class="footer-social-link" title="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="mailto:seyendeyeseynabou4@gmail.com" class="footer-social-link" title="Email">
+              <i class="bi bi-envelope-fill"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <a href="#hero" class="back-to-top" aria-label="Retour en haut" title="Retour en haut">
+    <i class="bi bi-chevron-up"></i>
+  </a>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS : Bootstrap uniquement (navbar hamburger + scrollspy) -->
+  <script>
+    // Initialisation Bootstrap ScrollSpy
+    new bootstrap.ScrollSpy(document.body, { target: '#mainNav', offset: 90 });
+
+    // Souligner le lien cliqué immédiatement
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', function () {
+        document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  </script>
+</body>
+
+</html>
